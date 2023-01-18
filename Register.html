@@ -5,30 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.js">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><img src="./Logo.png" alt="" width="100"></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                        <ul>
-                            <li><a href="OurMenu.html">Our Menu</a></li>
-                            <li><a href="EventServices.html">Event & Services</a></li>
-                        </ul>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                    <li><a href="Register.html">Register</a></li>
-                </ul>
+    <header>
+        <div id="navbar">
+            <div><img src="./Logo.png" width="100" alt=""></div>
+            <div id="menu">
+                <a href="./index.html">Home</a>
+                <a href="./AboutUs.html">About Us</a>
+                <div class="product">
+                    <a href="">Product</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="EventServices.html">Event & Services</a>
+                        <a href="OurMenu.html">Our Menu</a>
+                    </div>
+                </div>
+                <a href="./Register.html">Register</a>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <h1>About Us</h1>
-        <p>Bakmi JM merupakan restoran yang menyediakan berbagai macam jenis bakmi. Bakmi JM didirikan oleh Edyth Novian Putra pada tahun 2020. Restoran yang awalnya didirikan sebagai sampingan selama pandemi kini sudah menjadi restoran cepat saji yang sudah tersedia dimana-mana.</p>
-    </div>
-    
+    </header>
+    <main>
+    <form id="au" action="">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Amerika">Amerika</option>
+                <option value="Brazil">Brazil</option>
+            </select>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">I Agree</label>
+        </div>
+        <div>
+            <button type="submit" id="button_submit">Submit</button>
+        </div>
+    </form>
 </body>
+</html>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
