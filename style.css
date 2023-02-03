@@ -62,6 +62,20 @@ a:link{
     text-align: justify;
 }
 
+#img{
+    margin: 20px;
+}
+
+#om{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #022C43;
+    text-align: justify;
+}
+
 #lf{
     background-color: #FFD700;
     display: flex;
